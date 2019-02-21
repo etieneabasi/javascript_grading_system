@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function regrade(){
+            if (score>100){
+                alert ("enter a number from 0-100");
+                getscore();
+            }
+     else if (score>=0 && score<=44) {
+         alert(name + " you have an F in "+ subject);
+     }
+     else if (score>=45 && score<=49){
+         alert(name + "you have a D in "+ subject);
+     }
+     else if (score>=50 && score<=59){
+         alert(name + "you have a C in " + subject);
+     }
+     else if (score>=60 && score<=70){
+         alert(name + "you have a B in " + subject);
+     }
+     else if (score>=71 && score<=80){
+         alert(name + "you have a A in " + subject);
+         } 
+     else if (score>=81 && score<=100){
+         alert(name + " this is EXCELLENT,keep it up ")
+     }
+     else{
+         alert(name + " please confirm your score and try again ");
+         getscore();
+     }
+        }
+
+
+        function getscore(){
+            score =prompt("enter a number from 0-100");
+            regrade();
+
+        }
+     let name = prompt("input your name")
+     alert(" welcome " + name)
+     let subject = prompt("input subject")
+     let score = prompt("input score")
+     if (score>100){
+                alert ("enter a number from 0-100");
+                getscore();
+            }
+     else if (score>=0 && score<=44) {
+         alert(name + " you have an F in "+ subject);
+     }
+     else if (score>=45 && score<=49){
+         alert(name + "you have a D in "+ subject);
+     }
+     else if (score>=50 && score<=59){
+         alert(name + "you have a C in " + subject);
+     }
+     else if (score>=60 && score<=70){
+         alert(name + "you have a B in " + subject);
+     }
+     else if (score>=71 && score<=80){
+         alert(name + "you have a A in " + subject);
+         } 
+     else if (score>=81 && score<=100){
+         alert(name + " this is EXCELLENT,keep it up ")
+     }
+     else{
+         alert(name + " please confirm your score and try again ");
+         getscore();
+     }
+     </script>
+</body>
+</html>

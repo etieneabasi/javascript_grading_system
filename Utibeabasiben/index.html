@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Intro</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body class="bg-primary">
+    <div class="container bg-light my-3 rounded">
+
+        <h1 class="text-primary">JavaScript Interaction & Conditional Statements</h1>
+        <p id="demo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quam nisi id eos magni maxime ut inventore, praesentium maiores aliquam ipsa!</p>
+        <button type="button" onclick="myFunction()" title="Changes the paragraph" class="btn bg-primary rounded-pill text-white font-weight-bold shadow">Click here</button>
+        <p class="frankprompt py-5"></p>
+
+
+        <br /><br />
+    <script>
+        function myFunction() {
+            var message = "The paragraph above has changed."
+            alert(message);
+            document.getElementById("demo").innerHTML = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit atque voluptates quae modi repellat molestiae magnam placeat sapiente. Atque itaque suscipit assumenda quos numquam soluta sequi doloribus asperiores consectetur vero!";
+        }
+
+        // var name = "Miracle";
+        // document.write(name);
+        // alert("WELCOME");
+        // window.alert(5+2);
+
+        // let frank = prompt ('What is your name?');
+        // alert("Welcome " + frank);
+
+
+        let score = prompt("Enter your score below");
+
+        function reGrade(){
+            if (score >= 101){
+                alert("Enter a number from 0 - 100");
+                getScore();
+            }
+            else if (score >= 70){
+                alert("Your grade is 'A'.");
+            }
+            else if (score >= 60){
+                alert("Your grade is 'B'.");
+            }
+            else if (score >= 50){
+                alert("Your grade is 'C'.");
+            }
+            else if (score >= 45){
+                alert("Your grade is 'D'.");
+            }
+            else if (score == ""){
+                alert("You did not enter anything")
+                getScore();
+            }
+            else if (score >= 0){
+                alert("Your grade is 'F'.");
+            }
+            else if (score < 0){
+                alert("Enter a value from 0 - 100");
+                getScore();
+            }
+            else{
+                alert("Only number is allowed.");
+                getScore();
+            }
+        }
+
+        function getScore(){
+            score = prompt("Enter your score below");
+            reGrade();
+        }
+        
+        if (score >= 101){
+            alert("Enter a number from 0 - 100");
+            getScore();
+        }
+        else if (score >= 70){
+            alert("Your grade is 'A'.");
+        }
+        else if (score >= 60){
+            alert("Your grade is 'B'.");
+        }
+        else if (score >= 50){
+            alert("Your grade is 'C'."); 
+        }
+        else if (score >= 45){
+            alert("Your grade is 'D'.");
+        }
+        else if (score == ""){
+            alert("You did not enter anything")
+            getScore();
+        }
+        else if (score >= 0){
+            alert("Your grade is 'F'.");
+        }
+        else if (score < 0){
+            alert("Enter a value from 0 - 100");
+            getScore();
+        }
+        else{
+            alert("Only number is allowed.");
+            getScore();
+        }
+
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- <div class="form-group">
+        <label for=""></label>
+        <input type="text"
+          class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter score ">
+        <input type="submit" onclick="score()">
+    </div> -->
+
+    <script>
+       
+        let name = prompt('Input your name');
+        alert ('Welcome ' + name + ' proceed');
+
+        let score = prompt('Enter your score')
+
+            if(score>=70 && score<=100){
+                alert('A.' + '  Excellent keep up');
+            }else if(score>=60 && score<=69){
+                alert('B.' + '  Good keep working hard');
+            }else if(score>=50 && score<=59){
+                alert('C.' + '  Try harder');
+            }else if(score>=45 && score<=49){
+                alert('D.' + '  Situp next time');
+            }else if(score>=0 && score<=44){
+                alert('F.' +'  Re-register for the course');
+            }else{
+                alert('Oops! Out of range or not a number. Recheck')
+                let Recheck =('Enter the correct score');
+                alert( name + '  please enter your correct score from 0-100')
+                
+                let score = prompt('Enter your score')
+
+                    if(score>=70 && score<=100){
+                        alert('A.' + '  Excellent keep up');
+                    }else if(score>=60 && score<=69){
+                        alert('B.'+ '  Good keep working hard');
+                    }else if(score>=50 && score<=59){
+                        alert('C.' + '  Try harder');
+                    }else if(score>=45 && score<=49){
+                        alert('D.'+ '  Situp next time');
+                    }else if(score>=0 && score<=44){
+                        alert('F.' +' Re-register for the course');
+                    }else{
+                        alert('Oops! Multiple trial back out please');
+                        
+                    }
+            }
+        
+    </script>
+
+</body>
+</html>
+

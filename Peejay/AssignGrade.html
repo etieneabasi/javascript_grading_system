@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result Grade</title>
+</head>
+<body onload="grade()">
+    <script>
+        let name = prompt('Input Your Name')
+        alert(' Welcome ' + name)
+        let subject = prompt('Input Subject')
+
+        function grade(){
+            score = prompt("Insert Your Score");
+            box();
+        }
+
+
+        function box(){
+        if (score <= 100 && score >= 70){
+            alert (name + " you scored an A in " + subject);
+        }
+        else if(score <=69 && score >=60){
+            alert(name + ' you scored a B in '+ subject);
+        }
+        else if(score <=59 && score >=50){
+            alert(name + ' you scored a C in ' + subject);
+        }
+        else if(score <=49 && score >=45){
+            alert(name + ' you scored a D in ' + subject);
+        }
+        else if(score <=44 && score >=0){
+            alert(name + ' you scored an F in ' + subject);
+        }
+        else{
+            alert('Please Input a score from the range of 0-100');
+            grade();
+        }
+        }
+    </script>
+</body>
+</html>

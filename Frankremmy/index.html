@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grading</title>
+</head>
+<body>
+    <script>
+        let score = prompt ('Please Enter Your Score');
+        
+        if(score >= 70 && score <= 100){
+            alert('Congratulations! You got an A');
+        }
+        else if(score <= 69 && score >= 60){
+            alert('Congrats! You got a B');
+        }
+        else if(score <= 59 && score >= 50){
+            alert('Congratulations! You got a C');
+        }
+        else if(score <= 49 && score >= 45){
+            alert('Hey! You got a D. Focus more on your studies');
+        }
+        else if(score <= 44 && score >= 0){
+            alert('Sorry, you got an F. Try again next time');
+        }
+        else{
+            alert('please input the right score!');  
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    
+
+    
+    <script>
+
+         // RESULT GRADING SYSTEM USING conditional statement
+
+
+        let name = prompt("Begin with Your Surname");
+        
+        let subject = prompt("WELCOME " + name + " Input Your Subject")
+
+        let score = prompt("Hi " + name + " input your aggregate score for " + subject );
+        
+    function reGrade(){
+        
+        
+        if(score >= 45 && score <= 49){
+            alert("SORRY! " + name + " YOU HAVE 'D' in " + subject + " 'FAIR'");
+        }
+        else if(score >= 50 && score <= 54){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE 'CD' in " + subject  + " 'FAIR'");
+        }
+        else if(score >= 55 && score <=59 ){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE 'P' in " + subject + " 'PASS'" );
+        }
+        else if(score >= 60 && score <= 64){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE 'BC' in " + subject + " 'GOOD RESULT'" );
+        }
+        else if(score >= 65 && score <= 69){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE 'B' in " + subject + " 'GOOD RESULT'");
+        }
+        else if(score >= 70 && score <= 74){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE 'AB' in " + subject + " 'VERY GOOD RESULT'");
+        }
+        else if(score >= 75 && score <= 100){
+            alert("CONGRATULATIONS! " + name + " YOU HAVE AN  'A' in " + subject + " 'EXCELLENT RESULT'" );            
+        }
+         else if (score >= 0 && score <=44){
+            alert("SORRY! " + name + " YOU HAVE 'F' in " + subject + " 'FAIL'");
+        }
+         
+        else{
+            alert("Hi " + name + " Enter Numeric Values Only for " + subject);
+            getScore();
+        }
+    }
+    function getScore(){
+            score = prompt("Hi " + name + " input your aggregate score for " + subject );
+            reGrade();
+    }
+        if (score == "" && score ==" "){
+            alert("SORRY! " + name + " YOU HAVE NOT ADDED YOUR SCORE FOR " + subject );
+        }  
+        else if(score >= 101){
+            alert("Hi " + name + " Enter a Valid aggregate score for " + subject);
+            getScore();
+        }
+        else{
+            alert("Hi " + name + " Enter Numeric VAlues Only for " + subject);
+            getScore();
+        }
+      
+     
+       
+    </script>
+</body>
+</html>

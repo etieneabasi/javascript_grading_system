@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt('Hello,Whats your name?');
+        alert('Welcome' + " " + name);
+        let subject = prompt('input subject');
+        let score = prompt('input score');
+
+        if (score>100){
+            alert('The number should be from 0 - 100');
+        }
+        else if(score>=70){
+        alert(name + ', you have A in ' + subject );
+        alert(name + " " + 'Congrats! You have done well in' + " " + subject);
+        }
+        else if(score>=60){
+        alert(name + ', you have B in ' + subject );
+        }
+        else if(score>=50){
+        alert(name + ', you have C in ' + subject );
+        }
+        else if(score>=45){
+        alert(name + ', you have D in ' + subject );
+        }
+        else if(score>=0){
+        alert(name + ', you have F in ' + subject );
+        }
+        else{
+            alert('The input should be a number and should be from 0 - 100.');
+        }
+    
+    </script>
+    
+</body>
+</html>

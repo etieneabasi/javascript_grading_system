@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt('input your name')
+        alert('welcome' + name)
+        let Subject = prompt('Input Subject')
+        let score = prompt('Input Score')
+
+        function checkGrade(){
+            score = prompt("Re-enter your score")
+        }
+
+        if (score>=0 && score<=44) {
+        alert(name + ' You Have An F in ' + Subject);
+        }
+        else if (score>=0 && score<=29) {
+        alert(name + ' Are You This STUPID? in ' + Subject);
+        }
+        else if (score>=45 && score<=49) {
+        alert(name + ' You Have D in ' + Subject);
+        }
+        else if (score>=50 && score<=59) {
+        alert(name + ' You Have C in ' + Subject);
+        }
+        else if (score>=60 && score<=69) {
+        alert(name + ' You Have B in ' + Subject);
+        }
+        else if (score>=70 && score<=100) {
+        alert(name + ' You Have An A in ' + Subject);
+        }
+        else if (score>=80 && score<=100) {
+        alert(name + ' This Is Lovely Keep It Up');
+        }
+        else if (score>100 || score<0){
+        alert("if it more than 100");
+        checkGrade();
+        }
+        else {
+        alert(name + ' Please Confirm Your Score And Try Again Your score should be b/w 0 - 100');
+        }
+    </script>
+</body>
+</html>
